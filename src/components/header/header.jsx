@@ -1,4 +1,7 @@
 import React, {Component} from "react";
+import Logo from '../logo/logo'
+import Menu from '../menu/menu';
+import MenuItem from '../menuItem/menuItem';
 import css from "./header.scss";
 
 export default class Header extends Component {
@@ -7,9 +10,9 @@ export default class Header extends Component {
             <div className={css.container}>
                 <Logo/>
                 <Menu>
-                    <MenuItem text="home"/>
-                    <MenuItem text="about"/>
-                    <MenuItem text="contacts"/>
+                    <MenuItem href="/" text="home"/>
+                    <MenuItem href="/" text="about"/>
+                    <MenuItem href="/" text="contacts"/>
                 </Menu>
             </div>
         )

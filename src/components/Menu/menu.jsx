@@ -1,18 +1,17 @@
 import React, {Component, PropTypes} from "react";
-import css from "./content.scss";
-
-export default class Content extends Component {
+import css from "./menu.scss";
+export default class Menu extends Component {
     static props= {
-        children: PropTypes.node
+        children:PropTypes.node
     };
 
     render() {
         const {children} = this.props;
 
         return (
-            <div className={css.container}>
+            <ul className={css.container}>
                 {children}
-            </div>
+            </ul>
         )
     }
 }

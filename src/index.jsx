@@ -2,7 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import App from './components/app/app.jsx';
-import './assets/normalize.css';
+import './assets/styles/normalize.css';
+
 import './index.scss';
 
 render( <AppContainer><App/></AppContainer>, document.querySelector("#app"));

@@ -4,7 +4,7 @@ import css from "./button.scss";
 export default class Button extends Component {
     static props= {
         children: PropTypes.node
-    }
+    };
 
     render() {
         const {children} = this.props;

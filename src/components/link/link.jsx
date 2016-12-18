@@ -1,17 +1,20 @@
-import React, {Component} from "react";
+import React, {Component, PropTypes} from "react";
 import css from "./link.scss";
 
-export default class App extends Component {
+export default class Link extends Component {
     static props= {
-        children: PropTypes.node
-    }
+        children: PropTypes.node,
+        href: PropTypes.string,
+        text: PropTypes.string
+    };
 
     render() {
-        const {children} = this.props;
+        const {children, href, text} = this.props;
 
         return (
-            <a className={css.container} href="">
+            <a className={css.container} href={href}>
                 {children}
+                {text}
             </a>
         )
     }
