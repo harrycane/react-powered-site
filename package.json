@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-babel",
-  "version": "0.0.3",
-  "description": "React Webpack Babel Starter Kit",
+  "name": "react-powered-site",
+  "version": "0.0.1",
+  "description": "React Powered Site",
   "main": "''",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
@@ -10,12 +10,10 @@
     "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/alicoding/react-webpack-babel"
+    "type": "git"
   },
-  "author": "Ali Al Dallal",
+  "author": "Oleg Andreev",
   "license": "MIT",
-  "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
     "node-sass": "^3.13.0",
     "react": "15.4.1",
@@ -31,7 +29,7 @@
     "babel-preset-es2015": "6.18.0",
     "babel-preset-react": "6.16.0",
     "babel-runtime": "^6.20.0",
-    "css-loader": "0.26.1",
+    "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "0.9.0",
     "html-webpack-plugin": "^2.24.1",
