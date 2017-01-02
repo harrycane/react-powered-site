@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router';
 import Logo from '../logo/logo'
 import Menu from '../menu/menu';
 import MenuItem from '../menuItem/menuItem';
@@ -10,9 +11,9 @@ export default class Header extends Component {
             <div className={css.container}>
                 <Logo/>
                 <Menu>
-                    <MenuItem href="/" text="home"/>
-                    <MenuItem href="/" text="about"/>
-                    <MenuItem href="/" text="contacts"/>
+                    <MenuItem><Link to="home">home</Link></MenuItem>
+                    <MenuItem><Link to="about">about</Link></MenuItem>
+                    <MenuItem><Link to="contacts">contacts</Link></MenuItem>
                 </Menu>
             </div>
         )

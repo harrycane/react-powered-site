@@ -1,6 +1,5 @@
 import React, {PropTypes, Component} from "react";
 import Header from "../header/header";
-import Content from "../content/content";
 import css from "./app.scss";
 
 export default class App extends Component {
@@ -13,9 +12,7 @@ export default class App extends Component {
         return (
             <div className={css.container}>
                 <Header/>
-                <Content>
-                    {children}
-                </Content>
+                {children}
             </div>
         )
     }

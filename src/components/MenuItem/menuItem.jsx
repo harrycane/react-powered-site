@@ -9,10 +9,10 @@ export default class MenuItem extends Component {
     };
 
     render() {
-        const {text, href} = this.props;
+        const {children} = this.props;
         return (
             <li className={css.container}>
-                <Link href={href} text={text}/>
+                {children}
             </li>
         )
     }
