@@ -6,7 +6,7 @@ export default class HomePage extends Component {
     render() {
         return (
            <Content className={css.container}>
-               this is home page
+              <Button>Show Posts</Button>
            </Content>
         )
     }

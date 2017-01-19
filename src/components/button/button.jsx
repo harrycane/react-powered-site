@@ -3,13 +3,15 @@ import css from "./button.scss";
 
 export default class Button extends Component {
     static props= {
-        children: PropTypes.node
+        children: PropTypes.node,
+        onClick: PropTypes.func
     };
 
     render() {
-        const {children} = this.props;
+        const {children, onClick} = this.props;
+
         return (
-            <button className={css.container} type="button">
+            <button onClick={onClick} className={css.container} type="button">
                 {children}
             </button>
         )
